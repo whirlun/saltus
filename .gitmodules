@@ -1,0 +1,4 @@
+
+[submodule "mruby"]
+	path = mruby
+	url = git@github.com:mruby/mruby.git
