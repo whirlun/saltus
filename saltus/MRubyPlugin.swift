@@ -12,13 +12,12 @@ typealias mrb_fptr = UnsafeMutablePointer<mrb_func_t?>
 
 struct PluginMetaData {
     let name: String
-    let altname: [String]
     let hook: String
 }
 
 class PluginHost {
     let mrb: MRuby = MRuby()
-    var pluginList: [PluginMetaData] = []
+    var registry: [String: [String: PluginMetaData]] = ["editor_paragraph": [:]]
     
     init() {
         register_plugins()
@@ -55,8 +54,8 @@ class PluginHost {
                             let name = dict["name"]
                             let altname = dict["altname"]
                             let hook = dict["hook"]
-                            if let name = name as? String, let altname = altname as? [String], let hook = hook as? String {
-                                pluginList.append(PluginMetaData(name: name, altname: altname, hook: hook))
+                            if let name = name as? String, let hook = hook as? String {
+                                registry[hook]?[name] = PluginMetaData(name: name, hook: hook)
                             }
                         }
                     }
@@ -67,6 +66,32 @@ class PluginHost {
         } catch {
             print("\(error)")
         }
+    }
+    
+    func call_plugin_hook(hook: String, name: String, hook_val: String) -> String? {
+        let plugin_list = registry[hook]
+        if plugin_list!.contains(where: {key, _ in key == name}) {
+            let mrb_class = mrb.getClass(name)
+            let mrb_obj = mrb_class?.newObj(0, argv: nil)
+            if mrb.mrb_vm.pointee.exc != nil {
+                mrb_print_error(mrb.mrb_vm)
+                return nil
+            }
+            let arg = mrb_arg<mrb_value>.allocate(capacity: 1)
+            arg.initialize(to: mrb_str_new(self.mrb.mrb_vm, hook_val, mrb_int(hook_val.count)))
+            let hook_result = mrb_obj?.call(hook + "_hook", argc: 1, argv: arg)
+            if mrb.mrb_vm.pointee.exc != nil {
+                mrb_print_error(mrb.mrb_vm)
+                return nil
+            }
+            let unboxed = mrb.unboxValue(hook_result!, raw: false)
+            if let unboxed = unboxed{
+                if unboxed.t == .STRING {
+                    return unboxed.o as! NSString as String
+                }
+            }
+        }
+        return nil
     }
 }
 

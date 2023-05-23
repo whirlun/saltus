@@ -15,20 +15,22 @@
 		ED0228CF2A0F445500790993 /* saltusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0228CE2A0F445500790993 /* saltusUITests.swift */; };
 		ED0228D12A0F445500790993 /* saltusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0228D02A0F445500790993 /* saltusUITestsLaunchTests.swift */; };
 		ED0228EF2A11E6E600790993 /* mruby_bridge.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0228EE2A11E6E600790993 /* mruby_bridge.m */; };
-		ED0C2C902A11E8A6005E1F01 /* libmruby.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED0228EC2A11C9A900790993 /* libmruby.a */; };
 		ED0C2C922A11F2C7005E1F01 /* ApplicationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0C2C912A11F2C7005E1F01 /* ApplicationData.swift */; };
 		ED0C2C942A11F3BD005E1F01 /* EditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0C2C932A11F3BD005E1F01 /* EditorView.swift */; };
 		ED0C2C962A121B85005E1F01 /* ArticleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0C2C952A121B85005E1F01 /* ArticleListView.swift */; };
 		ED0C2C982A121B9E005E1F01 /* NavigatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0C2C972A121B9E005E1F01 /* NavigatorView.swift */; };
 		ED2F63442A15CB1900B40595 /* WebViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2F63432A15CB1900B40595 /* WebViewWrapper.swift */; };
 		ED2F634E2A1605A400B40595 /* highlight.min.js in Resources */ = {isa = PBXBuildFile; fileRef = ED2F634D2A1605A400B40595 /* highlight.min.js */; };
-		ED2F63502A1605C200B40595 /* default.min.css in Resources */ = {isa = PBXBuildFile; fileRef = ED2F634F2A1605C200B40595 /* default.min.css */; };
+		ED2F63502A1605C200B40595 /* catppuccin-mocha.css in Resources */ = {isa = PBXBuildFile; fileRef = ED2F634F2A1605C200B40595 /* catppuccin-mocha.css */; };
 		ED2F63532A16BB9000B40595 /* easymde.min.css in Resources */ = {isa = PBXBuildFile; fileRef = ED2F63512A16BB9000B40595 /* easymde.min.css */; };
 		ED2F63542A16BB9000B40595 /* easymde.min.js in Resources */ = {isa = PBXBuildFile; fileRef = ED2F63522A16BB9000B40595 /* easymde.min.js */; };
 		ED2F63562A16D1A600B40595 /* JsonMessageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2F63552A16D1A600B40595 /* JsonMessageHandler.swift */; };
 		ED2F63582A16D80200B40595 /* common.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2F63572A16D80200B40595 /* common.swift */; };
 		ED2F635A2A1835BD00B40595 /* FolderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2F63592A1835BD00B40595 /* FolderListView.swift */; };
 		ED2F636D2A183AB400B40595 /* ApplicationModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ED2F636B2A183AB400B40595 /* ApplicationModel.xcdatamodeld */; };
+		ED3D1C042A1C421D00915221 /* Ink in Frameworks */ = {isa = PBXBuildFile; productRef = ED3D1C032A1C421D00915221 /* Ink */; };
+		ED3D1C052A1C424300915221 /* libmruby.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3D1C012A1C41D000915221 /* libmruby.a */; };
+		ED3D1C072A1C7C9500915221 /* catppuccin-latte.css in Resources */ = {isa = PBXBuildFile; fileRef = ED3D1C062A1C7C9500915221 /* catppuccin-latte.css */; };
 		ED8FC4822A183EA500F871B8 /* Article+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8FC47E2A183EA500F871B8 /* Article+CoreDataClass.swift */; };
 		ED8FC4832A183EA500F871B8 /* Article+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8FC47F2A183EA500F871B8 /* Article+CoreDataProperties.swift */; };
 		ED8FC48D2A184BD700F871B8 /* Folder+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8FC48B2A184BD700F871B8 /* Folder+CoreDataClass.swift */; };
@@ -37,7 +39,6 @@
 		ED8FC4922A19F0C200F871B8 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8FC4912A19F0C200F871B8 /* CardView.swift */; };
 		ED8FC4942A1A157200F871B8 /* font-awesome.min.css in Resources */ = {isa = PBXBuildFile; fileRef = ED8FC4932A1A157200F871B8 /* font-awesome.min.css */; };
 		ED9AE0912A183D4E00476DCA /* WebView in Frameworks */ = {isa = PBXBuildFile; productRef = ED9AE0902A183D4E00476DCA /* WebView */; };
-		ED9AE0942A183D6600476DCA /* Ink in Frameworks */ = {isa = PBXBuildFile; productRef = ED9AE0932A183D6600476DCA /* Ink */; };
 		EDA1A4E72A12EFED00630A0D /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = EDA1A4E62A12EFED00630A0D /* index.html */; };
 		EDA1A4E92A12F04800630A0D /* index.js in Resources */ = {isa = PBXBuildFile; fileRef = EDA1A4E82A12F04800630A0D /* index.js */; };
 /* End PBXBuildFile section */
@@ -95,13 +96,15 @@
 		ED0C2C972A121B9E005E1F01 /* NavigatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigatorView.swift; sourceTree = "<group>"; };
 		ED2F63432A15CB1900B40595 /* WebViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewWrapper.swift; sourceTree = "<group>"; };
 		ED2F634D2A1605A400B40595 /* highlight.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = highlight.min.js; sourceTree = "<group>"; };
-		ED2F634F2A1605C200B40595 /* default.min.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = default.min.css; sourceTree = "<group>"; };
+		ED2F634F2A1605C200B40595 /* catppuccin-mocha.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = "catppuccin-mocha.css"; sourceTree = "<group>"; };
 		ED2F63512A16BB9000B40595 /* easymde.min.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = easymde.min.css; sourceTree = "<group>"; };
 		ED2F63522A16BB9000B40595 /* easymde.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = easymde.min.js; sourceTree = "<group>"; };
 		ED2F63552A16D1A600B40595 /* JsonMessageHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonMessageHandler.swift; sourceTree = "<group>"; };
 		ED2F63572A16D80200B40595 /* common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = common.swift; sourceTree = "<group>"; };
 		ED2F63592A1835BD00B40595 /* FolderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderListView.swift; sourceTree = "<group>"; };
 		ED2F636C2A183AB400B40595 /* ApplicationModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ApplicationModel.xcdatamodel; sourceTree = "<group>"; };
+		ED3D1C012A1C41D000915221 /* libmruby.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmruby.a; path = ../saltus/mruby/build/host/lib/libmruby.a; sourceTree = "<group>"; };
+		ED3D1C062A1C7C9500915221 /* catppuccin-latte.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = "catppuccin-latte.css"; sourceTree = "<group>"; };
 		ED8FC47E2A183EA500F871B8 /* Article+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Article+CoreDataClass.swift"; sourceTree = "<group>"; };
 		ED8FC47F2A183EA500F871B8 /* Article+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Article+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		ED8FC48B2A184BD700F871B8 /* Folder+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Folder+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -118,9 +121,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED9AE0942A183D6600476DCA /* Ink in Frameworks */,
+				ED3D1C052A1C424300915221 /* libmruby.a in Frameworks */,
 				ED9AE0912A183D4E00476DCA /* WebView in Frameworks */,
-				ED0C2C902A11E8A6005E1F01 /* libmruby.a in Frameworks */,
+				ED3D1C042A1C421D00915221 /* Ink in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +221,7 @@
 		ED0228EB2A11C9A900790993 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ED3D1C012A1C41D000915221 /* libmruby.a */,
 				ED0228EC2A11C9A900790993 /* libmruby.a */,
 			);
 			name = Frameworks;
@@ -241,9 +245,10 @@
 				ED2F63522A16BB9000B40595 /* easymde.min.js */,
 				EDA1A4E62A12EFED00630A0D /* index.html */,
 				ED2F634D2A1605A400B40595 /* highlight.min.js */,
-				ED2F634F2A1605C200B40595 /* default.min.css */,
+				ED2F634F2A1605C200B40595 /* catppuccin-mocha.css */,
 				EDA1A4E82A12F04800630A0D /* index.js */,
 				ED8FC4932A1A157200F871B8 /* font-awesome.min.css */,
+				ED3D1C062A1C7C9500915221 /* catppuccin-latte.css */,
 			);
 			path = editor;
 			sourceTree = "<group>";
@@ -267,7 +272,7 @@
 			name = saltus;
 			packageProductDependencies = (
 				ED9AE0902A183D4E00476DCA /* WebView */,
-				ED9AE0932A183D6600476DCA /* Ink */,
+				ED3D1C032A1C421D00915221 /* Ink */,
 			);
 			productName = saltus;
 			productReference = ED0228AF2A0F445400790993 /* saltus.app */;
@@ -368,9 +373,10 @@
 				ED2F63542A16BB9000B40595 /* easymde.min.js in Resources */,
 				ED8FC4942A1A157200F871B8 /* font-awesome.min.css in Resources */,
 				ED0228B72A0F445500790993 /* Assets.xcassets in Resources */,
-				ED2F63502A1605C200B40595 /* default.min.css in Resources */,
+				ED2F63502A1605C200B40595 /* catppuccin-mocha.css in Resources */,
 				ED2F634E2A1605A400B40595 /* highlight.min.js in Resources */,
 				EDA1A4E92A12F04800630A0D /* index.js in Resources */,
+				ED3D1C072A1C7C9500915221 /* catppuccin-latte.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -762,15 +768,15 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		ED3D1C032A1C421D00915221 /* Ink */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED9AE0922A183D6600476DCA /* XCRemoteSwiftPackageReference "Ink" */;
+			productName = Ink;
+		};
 		ED9AE0902A183D4E00476DCA /* WebView */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = ED9AE08F2A183D4E00476DCA /* XCRemoteSwiftPackageReference "SwiftUI-WebView" */;
 			productName = WebView;
-		};
-		ED9AE0932A183D6600476DCA /* Ink */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = ED9AE0922A183D6600476DCA /* XCRemoteSwiftPackageReference "Ink" */;
-			productName = Ink;
 		};
 /* End XCSwiftPackageProductDependency section */
 

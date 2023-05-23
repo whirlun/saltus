@@ -42,9 +42,9 @@ struct SplitView: View {
                         .popover(isPresented: $article_popover_display, arrowEdge: .bottom) {
                             AddPopoverView(item_input: $item_input, article_popover_display: $article_popover_display, folder_popover_display: $folder_popover_display,  article_list_observer: $article_list_observer, target: .article).padding()
                         }
-                    Button(action: {
-                        data.right_bar = !data.right_bar
-                    }, label: {Image(systemName: "menucard")})
+                    //Button(action: {
+                    //    data.right_bar = !data.right_bar
+                    //}, label: {Image(systemName: "menucard")})
                     //Button(action: {data.deleteAllArticle()}, label: {Image(systemName: "xmark.bin.fill")})
                 })
             

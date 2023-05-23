@@ -10,7 +10,7 @@
     </style>
 </head>
 <body style="font-size: 12px;font-family: Hiragino Sans GB, Hiragino Sans">
-    <link rel="stylesheet" href="default.min.css">
+    <link rel="stylesheet" href="catppuccin-latte.css">
     <link rel="stylesheet" href="easymde.min.css">
         <link rel="stylesheet" href="font-awesome.min.css">
             <script src="highlight.min.js"></script>
@@ -61,10 +61,10 @@
                         document.getElementById("viewer-div").style.display = "block";
                         let viewer = document.getElementById("viewer-div");
                         viewer.innerHTML = json.html;
+                        hljs.highlightAll();
                     }
                     //webkit.messageHandlers.WebViewMessageHandler.postMessage(msg);
                 }
-                
             </script>
             <div style="height: 100%" id="editor-div">
                 <textarea id="editor" style="height: 100%"></textarea>

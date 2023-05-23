@@ -19,7 +19,7 @@ struct ContentView: View {
                     .environmentObject(data)
                     .environment(\.managedObjectContext, data.container.viewContext)
                 if data.right_bar {
-                    CardView()
+                    //CardView()
                 }
             }
         }
